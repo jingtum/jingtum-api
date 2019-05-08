@@ -536,11 +536,11 @@ function process_orderbook_item(items, sell) {
     for (var i = 0; i < items.length; ++i) {
         var item = items[i];
         if (item.sell && sell) {
-            item.price = Number(item.price.value.substr(0, item.price.value.indexOf('.') + 6));  // 卖(ask, true) 进最后一位
+            item.price = Number(item.price.value.substr(0, item.price.value.indexOf('.') + 9));  // 卖(ask, true) 进最后一位
             item.funded = parseFloat(item.taker_gets_funded.value);
             newItems.push(item);
         } else if(!item.sell && !sell){
-            item.price = Number(item.price.value.substr(0, item.price.value.indexOf('.') + 6));// 买(bid, flase) 舍最后一位
+            item.price = Number(item.price.value.substr(0, item.price.value.indexOf('.') + 9));// 买(bid, flase) 舍最后一位
             item.funded = parseFloat(item.taker_pays_funded.value);
             newItems.push(item);
         }

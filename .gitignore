@@ -8,5 +8,6 @@ coverage/
 *.bak
 
 test.js
+package-lock.json
 
 config.json

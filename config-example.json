@@ -11,7 +11,7 @@
 	"port": 3000,
 	"ws_port": 5020,
 	"skywelld_servers": {
-		"server":"ws://ts5.jingtum.com:5020",
+		"server":"wss://ts5.jingtum.com:5020",
 		"local_sign":true
 	},
 	"freezed": {
@@ -19,10 +19,10 @@
 		"each_freezed": 5.0
 	},
 	"mysql_server": {
-		"host": "123.57.219.73",
-		"user": "root",
-		"password": "#gNvZ-FjTAn4yO!v",
-		"database": "apidb"
+		"host": "数据库IP地址",
+		"user": "数据库用户名",
+		"password": "数据库密码",
+		"database": "数据库名"
 	},
 	"base_currency": "SWT",
 	"issuer" : "jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS",

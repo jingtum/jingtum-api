@@ -33,7 +33,7 @@ See docs/jingtum-api.pdf
 `npm install`
 
 3. Configure enviroments
-`cp config-example.json config.json`
+`cp config-example.json config.json` and modify the config.json, especially database options.
 
 4. Start server
 make log dirs

@@ -16,7 +16,7 @@ Jingtum API is express app with redis and msyql.
 
 ## API Interface 
 
-See Swagger.JSON
+See docs/jingtum-api.pdf
 
 ## Advanced Functions
 
@@ -27,7 +27,7 @@ See Swagger.JSON
 ## Quick Start
 
 1. Clone Jingtum API repository with git
-`git clone http://git.jingtum.com/root/jingtum-api.git`
+`git clone  https://github.com/jingtum/jingtum-api.git`
 
 2. Install dependenies
 `npm install`

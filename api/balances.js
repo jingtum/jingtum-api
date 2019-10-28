@@ -106,7 +106,7 @@ function process_balance(data,condition) {
         var freezed = 0;
         data.orders.offers.forEach(function (off) {
             var taker_gets = jutils.parseAmount(off.taker_gets);
-            if (taker_gets.currency === swt_data.currency && taker_gets.issuer === swt_data.issuer) {
+            if (taker_gets.currency === swt_data.currency && taker_gets.issuer === swt_data.issuer && i === 0) { //swt遍历一次
                 var tmpFreezed = parseFloat(swt_data.freezed) + parseFloat(taker_gets.value);
                 swt_data.freezed = tmpFreezed + '';
             } else if (taker_gets.currency === tmpBal.currency && taker_gets.issuer === tmpBal.issuer) {
